@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body, html{
     display: flex;
     flex-direction: column;
@@ -55,11 +62,12 @@ body, html{
     justify-content: space-evenly;
     /* gap: 24px; */
     align-items: flex-start;
+    flex: 1;
 }
 
 .secondary-text {
     max-width: 500px;
-    /* flex: 1; */
+    
 }
 
 .link-text, .secondary-text {
@@ -91,12 +99,13 @@ a {
 
 .images {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items:center;
+    justify-content:space-between;
     gap: 8px;
     flex: 1 0 auto;
     gap: 100px;
     flex-wrap: wrap;
+    padding: 50px;
     
 }
 
@@ -112,24 +121,28 @@ a {
 
 .quote {
     background-color: #e5e7eb;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: flex-end;
-    min-height: 400px;
-    width: 100%;
-    flex-wrap: wrap;
-
+    padding: 100px 15%;
 }
-.text-quote {
-    max-height: auto;
-    padding: 10px;
 
+.quote-text {
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.quote-author {
+    font-size: 24px;
+    color: #1f2937;
+    font-weight: bold;
+    text-align: right;
 }
 .call-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* text-align: center; */
     /* gap: 8px; */
     padding: 70px 50px;
     width: 50%;
