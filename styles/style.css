@@ -8,9 +8,11 @@ body, html{
     margin: 0;
     align-items: center;
     /* padding: 10px; */
-
-    font: Roboto;
+    font-family: 'Roboto', sans-serif; 
 }
+    
+
+
 
 .main {
     background-color: #1f2937;
